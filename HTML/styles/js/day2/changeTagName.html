@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head></head>
+    <body>
+        
+<header><h1>ChangeByTag Name</h1>
+</header><hr>
+<p style=color:green;>Paragraph one</p>
+<p style=color:blue;>Paragraph two</p>
+<p style=color:purple;>Praragraph three</p>
+<button type="button" onclick="changeColors()">Click to change colors</button>
+
+<script>
+function changeColors(){
+   var myP = document.getElementsByTagName("p");
+
+    for (var i = 0; i<myP.length; i++) {
+     
+            myP[i].style.backgroundColor= 'red';    
+        }
+}
+
+
+</script>
+</body>
+</html>

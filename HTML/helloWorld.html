@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head></head>
+    <body>
+        
+<header><h1>Title</h1>
+</header><hr>
+<p>SOmething boring</p>
+<button id="b1" type="button">Click</button>
+
+<form id="F" ><h1>FORM</h1>
+    <div id="D" ><h2>DIV</h2>
+        <p id="P" >Para
+        </p>
+
+    </div>
+
+</form>
+<script>
+document.getElementById("b1").addEventListener("click",displayHelloWorld,true);
+function displayHelloWorld(){
+    
+   v1= document.getElementsByTagName('p')
+   v1[0].innerHTML="Hello World"
+}
+
+document.getElementById("F").addEventListener("click",function(){alert('F')},false);
+document.getElementById("D").addEventListener("click",function(){alert('D')},false);
+document.getElementById("P").addEventListener("click",function(){alert('P')},false);
+
+
+</script>
+
+</body>
+</html>

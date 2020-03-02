@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head></head>
+    <body>
+        
+<header><h1>Create and append item to list</h1>
+</header><hr>
+<ul id="list">Super cool list
+    <li>Water</li>
+    <li>Sugar</li>
+    <li>Blood</li>
+</ul>
+
+<script>
+
+   v1= document.createElement("li");
+    v2=document.createTextNode("The ash of a goat");
+v1.appendChild(v2);
+
+v3= document.getElementById("list");
+
+v3.insertBefore(v1, v3.childNodes[0]);
+</script>
+
+</body>
+</html>

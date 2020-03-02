@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head></head>
+    <body>
+        
+<header><h1>Query Selector</h1>
+</header><hr>
+
+<h1 class="c1">h1 cq</h1>
+<p class="notc">p not</p>
+<p class="c1">p c1</p>
+<button type="button" onclick="queryChange()">Click</button>
+
+<script>
+function queryChange(){
+
+        query= document.querySelectorAll('p.c1');
+
+        query[0].style.backgroundColor='blue';
+        
+}
+
+</script>
+
+</body>
+</html>
